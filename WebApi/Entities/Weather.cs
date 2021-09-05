@@ -4,7 +4,7 @@ namespace WebApi.Entities
 {
     public class Weather
     {
-        public List<Dictionary<string,string>> wheater { get; set; }
+        public List<Dictionary<string,string>> weather { get; set; }
         public Dictionary<string,float> main { get; set; }
         public Dictionary<string,float> wind { get; set; }
         public Dictionary<string, string> sys { get; set; }

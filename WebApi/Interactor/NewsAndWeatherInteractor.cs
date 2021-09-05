@@ -28,7 +28,7 @@ namespace WebApi.Interactor
 
         public static async Task<Weather> get_weather(string city,string ApiKey)
         {
-            string url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={ApiKey}";
+            string url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={ApiKey}";
             string dataString = await made_get_petition(url);
             var data = JsonConvert.DeserializeObject<Weather>(dataString);
 
